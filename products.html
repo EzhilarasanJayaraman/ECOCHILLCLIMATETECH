@@ -25,42 +25,52 @@
       const categories = [
         {
           name: "Split AC",
+          image: "images/split-ac.png",
           link: "https://www.daikinindia.com/product-category/splitac",
         },
         {
           name: "Cassette AC",
+          image: "images/cassate_ac.png",
           link: "https://www.daikinindia.com/product-category/cassette",
         },
         {
           name: "Floor Standing",
+          image: "images/floor-standing.png",
           link: "https://www.daikinindia.com/products-services/floor-standing",
         },
         {
           name: "Ducted AC",
+          image: "images/ducted.png",
           link: "https://www.daikinindia.com/product-category/ducted-air-conditioner",
         },
         {
           name: "Chillers",
+          image: "images/chillers.png",
           link: "https://www.daikinindia.com/product-category/chillers",
         },
         {
           name: "Refrigeration",
+          image: "images/Refrigeration.png",
           link: "https://www.daikinindia.com/cold-chain-solution",
         },
         {
           name: "FCU",
+          image: "images/fcu.png",
           link: "https://www.daikinindia.com/product-category/fcu",
         },
         {
           name: "Ceiling Suspended",
+          image: "images/ceiling-suspended.png",
           link: "https://www.daikinindia.com/product-category/ceiling-suspended-one-way",
         },
         {
           name: "One-Way",
+          image: "images/ceiling-suspended.png",
           link: "https://www.daikinindia.com/product-category/ceiling-suspended-one-way",
         },
         {
           name: "Air Purifiers",
+          image: "images/ap-img.png",
           link: "https://www.daikinindia.com/product-category/air-purifier-0",
         },
       ];
@@ -70,7 +80,10 @@
       categories.forEach((cat) => {
         const card = document.createElement("div");
         card.className = "card";
-        card.innerHTML = `<h3>${cat.name}</h3>`;
+        card.innerHTML = `
+          <img src="${cat.image}" alt="${cat.name}" style="height:150px; object-fit:cover; border-radius:8px;" />
+          <h3>${cat.name}</h3>
+        `;
         card.onclick = () => window.open(cat.link, "_blank");
         container.appendChild(card);
       });
