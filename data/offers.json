@@ -1,0 +1,20 @@
+[
+  {
+    "id": 1,
+    "title": "Summer Cool Discount",
+    "description": "Get 15% off on all split ACs this summer. Limited time offer!\nFree installation included.",
+    "valid_till": "2025-08-31"
+  },
+  {
+    "id": 2,
+    "title": "Daikin Special",
+    "description": "Buy any Daikin AC and get a free extended warranty for 2 years.",
+    "valid_till": "2025-07-15"
+  },
+  {
+    "id": 3,
+    "title": "Combo Deal",
+    "description": "Purchase any 2 ACs and get an additional 10% discount on total bill.",
+    "valid_till": "2025-06-30"
+  }
+]

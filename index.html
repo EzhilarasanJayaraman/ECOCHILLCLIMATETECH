@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Ecochill Climate Tech | Home</title>
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap"
+      rel="stylesheet"
+    />
+    <link href="css/style.css" rel="stylesheet" />
+  </head>
+  <body>
+    <header>
+      <h1>Ecochill Climate Tech</h1>
+      <p>Your comfort, our priority.</p>
+    </header>
+
+    <nav>
+      <a href="#" class="nav-link" data-page="index">Home</a>
+      <a href="#" class="nav-link" data-page="products">Products</a>
+      <a href="#" class="nav-link" data-page="offers">Offers</a>
+      <a href="#" class="nav-link" data-page="brands">Brands</a>
+      <a href="#" class="nav-link" data-page="contact">Contact</a>
+      <a href="#" class="nav-link" data-page="about">About Us</a>
+      <button id="adminBtn">Admin</button>
+    </nav>
+
+    <section class="hero">
+      <h2>Discover the Best Air Conditioners in Town</h2>
+      <p>Premium brands, affordable prices, top-notch service.</p>
+      <button class="button" id="viewProductsBtn">View All Products</button>
+    </section>
+
+    <section class="features">
+      <div class="feature-box">
+        <h3>Split & Window ACs</h3>
+        <p>
+          Choose from a wide range of AC types suited for every room and budget.
+        </p>
+      </div>
+      <div class="feature-box">
+        <h3>Trusted Brands</h3>
+        <p>We offer ACs from top brands like Daikin, and more.</p>
+      </div>
+      <div class="feature-box">
+        <h3>Seasonal Offers</h3>
+        <p>Exciting discounts and combo deals available on select models.</p>
+      </div>
+      <div class="feature-box">
+        <h3>Installation & Service</h3>
+        <p>Quick installation and reliable post-purchase support guaranteed.</p>
+      </div>
+    </section>
+
+    <!-- Login Modal -->
+    <div id="loginModal" class="modal">
+      <div class="modal-content">
+        <span class="close-btn" id="closeModal">&times;</span>
+        <h2>Admin Login</h2>
+        <label for="username">Username</label>
+        <input type="text" id="username" placeholder="Enter username" />
+        <label for="password">Password</label>
+        <input
+          type="password"
+          id="password"
+          placeholder="Enter password"
+          autocomplete="off"
+        />
+        <button id="loginSubmit">Login</button>
+        <div class="error-msg" id="errorMsg"></div>
+      </div>
+    </div>
+
+    <section class="location">
+      <h3>Visit Our Shop</h3>
+      <p>
+        <a
+          href="https://maps.app.goo.gl/WJcuzwuG7zrzeuMc7"
+          target="_blank"
+          class="map-link"
+        >
+          📍 Ecochill Climate Tech - Get Directions on Google Maps
+        </a>
+      </p>
+    </section>
+
+    <div class="grid" id="cate"></div>
+    <div class="grid" id="products"></div>
+    <footer>&copy; 2025 Ecochill Climate Tech</footer>
+
+    <script src="js/main.js"></script>
+  </body>
+</html>

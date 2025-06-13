@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Admin Dashboard - AC Shop</title>
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap"
+      rel="stylesheet"
+    />
+    <link href="css/style.css" rel="stylesheet" />
+  </head>
+  <body>
+    <a href="index.html" class="back-btn nav-link" data-page="index">Back</a>
+    <header>
+      <h1>Admin Dashboard - AC Shop</h1>
+    </header>
+    <main>
+      <!-- PRODUCT SECTION -->
+      <section>
+        <h2>Add Product</h2>
+        <form id="addProductForm">
+          <input type="hidden" name="action" value="add_product" />
+          <label>Product Name</label>
+          <input type="text" name="product_name" required />
+          <label>Category</label>
+          <select name="category" required>
+            <option value="">--Select--</option>
+            <option value="Split AC">Split AC</option>
+            <option value="Window AC">Window AC</option>
+            <option value="Cassette AC">Cassette AC</option>
+            <option value="Tower AC">Tower AC</option>
+            <option value="Air Purifier">Air Purifier</option>
+          </select>
+          <label>Brand</label>
+          <input type="text" name="brand" required />
+          <label>Tonnage</label>
+          <input type="text" name="tonnage" required />
+          <label>Price</label>
+          <input type="number" name="price" required />
+          <label>Description</label>
+          <textarea name="description" required></textarea>
+          <label>Image URL</label>
+          <input type="text" name="image" required />
+          <button type="submit">Add Product</button>
+        </form>
+
+        <div id="productList">
+          <h3>Current Products</h3>
+          <table>
+            <tr>
+              <th>Name</th>
+              <th>Category</th>
+              <th>Brand</th>
+              <th>Tonnage</th>
+              <th>Price</th>
+              <th>Action</th>
+            </tr>
+            <!-- Products will be loaded here via JavaScript -->
+          </table>
+        </div>
+      </section>
+
+      <!-- OFFER SECTION -->
+      <section>
+        <h2>Add Offer</h2>
+        <form id="addOfferForm">
+          <input type="hidden" name="action" value="add_offer" />
+          <label>Title</label>
+          <input type="text" name="offer_title" required />
+          <label>Description</label>
+          <textarea name="offer_description" required></textarea>
+          <label>Valid Till</label>
+          <input type="date" name="valid_till" required />
+          <button type="submit">Add Offer</button>
+        </form>
+
+        <div id="offerList">
+          <h3>Current Offers</h3>
+          <table>
+            <tr>
+              <th>Title</th>
+              <th>Description</th>
+              <th>Valid Till</th>
+              <th>Action</th>
+            </tr>
+            <!-- Offers will be loaded here via JavaScript -->
+          </table>
+        </div>
+      </section>
+
+      <!-- BRAND SECTION -->
+      <section>
+        <h2>Manage Brands</h2>
+        <form id="addBrandForm">
+          <input type="hidden" name="action" value="add_brand" />
+          <label>Brand Name</label>
+          <input type="text" name="brand_name" required />
+          <label>Brand Image URL</label>
+          <input type="text" name="brand_image" required />
+          <button type="submit">Add Brand</button>
+        </form>
+
+        <div id="brandList">
+          <h3>Current Brands</h3>
+          <table>
+            <tr>
+              <th>Name</th>
+              <th>Image</th>
+              <th>Action</th>
+            </tr>
+            <!-- Brands will be loaded here via JavaScript -->
+          </table>
+        </div>
+      </section>
+    </main>
+
+    <script src="js/admin.js"></script>
+  </body>
+</html>

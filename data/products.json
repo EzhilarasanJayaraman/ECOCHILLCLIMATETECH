@@ -1,0 +1,31 @@
+[
+  {
+    "id": 1,
+    "name": "Daikin Split AC 1.5 Ton",
+    "category": "Split AC",
+    "brand": "Daikin",
+    "tonnage": "1.5",
+    "price": 45000,
+    "description": "Energy efficient split AC with inverter technology"
+  },
+  {
+    "id": 2,
+    "name": "Daikin Window AC 1 Ton",
+    "category": "Window AC",
+    "brand": "Daikin",
+    "tonnage": "1",
+    "price": 32000,
+    "description": "Compact window AC with eco mode",
+    "image": "images/daikin-window.jpg"
+  },
+  {
+    "id": 3,
+    "name": "Daikin Cassette AC 2 Ton",
+    "category": "Cassette AC",
+    "brand": "Daikin",
+    "tonnage": "2",
+    "price": 65000,
+    "description": "Commercial grade cassette AC for large spaces",
+    "image": "images/daikin-cassette.jpg"
+  }
+]

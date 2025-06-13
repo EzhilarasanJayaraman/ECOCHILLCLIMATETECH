@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Ecochill Climate Tech — Daikin AC Categories</title>
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="css/style.css" />
+  </head>
+  <body>
+    <a href="index.html" class="back-btn">Back</a>
+    <header>
+      <h2>Ecochill Climate Tech — Explore Daikin AC Categories</h2>
+      <p>
+        Click on a category to visit Daikin's official page for that type of AC
+      </p>
+    </header>
+
+    <div class="grid" id="categories"></div>
+
+    <script>
+      const categories = [
+        {
+          name: "Split AC",
+          link: "https://www.daikinindia.com/product-category/splitac",
+        },
+        {
+          name: "Cassette AC",
+          link: "https://www.daikinindia.com/product-category/cassette",
+        },
+        {
+          name: "Floor Standing",
+          link: "https://www.daikinindia.com/products-services/floor-standing",
+        },
+        {
+          name: "Ducted AC",
+          link: "https://www.daikinindia.com/product-category/ducted-air-conditioner",
+        },
+        {
+          name: "VRV System",
+          link: "https://www.daikinindia.com/product-category/vrv-air-conditioner",
+        },
+        {
+          name: "Chillers",
+          link: "https://www.daikinindia.com/product-category/chillers",
+        },
+        {
+          name: "Refrigeration",
+          link: "https://www.daikinindia.com/cold-chain-solution",
+        },
+        {
+          name: "Rooftop",
+          link: "https://www.daikinindia.com/product-category/roof-top",
+        },
+        {
+          name: "FCU",
+          link: "https://www.daikinindia.com/product-category/fcu",
+        },
+        {
+          name: "Ceiling Suspended",
+          link: "https://www.daikinindia.com/product-category/ceiling-suspended-one-way",
+        },
+        {
+          name: "One-Way",
+          link: "https://www.daikinindia.com/product-category/ceiling-suspended-one-way",
+        },
+        {
+          name: "Control Systems",
+          link: "https://www.daikinindia.com/product-category/control-systems",
+        },
+        {
+          name: "Air Purifiers",
+          link: "https://www.daikinindia.com/product-category/air-purifier-0",
+        },
+      ];
+
+      const container = document.getElementById("categories");
+
+      categories.forEach((cat) => {
+        const card = document.createElement("div");
+        card.className = "card";
+        card.innerHTML = `<h3>${cat.name}</h3>`;
+        card.onclick = () => window.open(cat.link, "_blank");
+        container.appendChild(card);
+      });
+    </script>
+  </body>
+</html>
