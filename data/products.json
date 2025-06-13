@@ -1,31 +1,52 @@
 [
   {
-    "id": 1,
-    "name": "Daikin Split AC 1.5 Ton",
-    "category": "Split AC",
-    "brand": "Daikin",
-    "tonnage": "1.5",
-    "price": 45000,
-    "description": "Energy efficient split AC with inverter technology"
+    "name": "Split AC",
+    "image": "images/split-ac.jpg",
+    "link": "https://www.daikinindia.com/product-category/splitac"
   },
   {
-    "id": 2,
-    "name": "Daikin Window AC 1 Ton",
-    "category": "Window AC",
-    "brand": "Daikin",
-    "tonnage": "1",
-    "price": 32000,
-    "description": "Compact window AC with eco mode",
-    "image": "images/daikin-window.jpg"
+    "name": "Cassette AC",
+    "image": "images/categories/cassette-ac.jpg",
+    "link": "https://www.daikinindia.com/product-category/cassette"
   },
   {
-    "id": 3,
-    "name": "Daikin Cassette AC 2 Ton",
-    "category": "Cassette AC",
-    "brand": "Daikin",
-    "tonnage": "2",
-    "price": 65000,
-    "description": "Commercial grade cassette AC for large spaces",
-    "image": "images/daikin-cassette.jpg"
+    "name": "Floor Standing",
+    "image": "images/categories/floor-standing.jpg",
+    "link": "https://www.daikinindia.com/products-services/floor-standing"
+  },
+  {
+    "name": "Ducted AC",
+    "image": "images/categories/ducted-ac.jpg",
+    "link": "https://www.daikinindia.com/product-category/ducted-air-conditioner"
+  },
+  {
+    "name": "Chillers",
+    "image": "images/categories/chillers.jpg",
+    "link": "https://www.daikinindia.com/product-category/chillers"
+  },
+  {
+    "name": "Refrigeration",
+    "image": "images/categories/refrigeration.jpg",
+    "link": "https://www.daikinindia.com/cold-chain-solution"
+  },
+  {
+    "name": "FCU",
+    "image": "images/categories/fcu.jpg",
+    "link": "https://www.daikinindia.com/product-category/fcu"
+  },
+  {
+    "name": "Ceiling Suspended",
+    "image": "images/categories/ceiling-suspended.jpg",
+    "link": "https://www.daikinindia.com/product-category/ceiling-suspended-one-way"
+  },
+  {
+    "name": "One-Way",
+    "image": "images/categories/one-way.jpg",
+    "link": "https://www.daikinindia.com/product-category/ceiling-suspended-one-way"
+  },
+  {
+    "name": "Air Purifiers",
+    "image": "images/categories/air-purifier.jpg",
+    "link": "https://www.daikinindia.com/product-category/air-purifier-0"
   }
 ]
