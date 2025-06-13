@@ -6,21 +6,28 @@ fetch("data/products.json")
       pDiv = document.getElementById("products"),
       btn = document.getElementById("back");
 
-    // Group products by category
+    // Group products by category with image
     const productsByCategory = {};
+    const categoryImages = {};
+
     data.forEach((product) => {
       if (!productsByCategory[product.category]) {
         productsByCategory[product.category] = [];
+        if (product.categoryImage) {
+          categoryImages[product.category] = product.categoryImage;
+        }
       }
       productsByCategory[product.category].push(product);
     });
 
-    // Display categories (NO IMAGE!)
+    // Display categories with image
     Object.keys(productsByCategory).forEach((cat) => {
       const d = document.createElement("div");
       d.className = "card";
       d.innerHTML = `
-        <div style="font-size: 2rem;">❄️</div>
+        <img src="${
+          categoryImages[cat] || "images/default.jpg"
+        }" alt="${cat}" style="height:150px; object-fit:cover; border-radius: 8px;" />
         <h3>${cat}</h3>
       `;
       d.onclick = () => showCategory(cat, productsByCategory[cat]);
