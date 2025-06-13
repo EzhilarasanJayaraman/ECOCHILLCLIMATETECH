@@ -97,20 +97,9 @@ nav button:hover {
   margin-top: 30px;
   flex-wrap: wrap;
 }
-.button {
-  text-decoration: none; /* ✅ This removes underline */
-  background: #0072ff;
-  color: white;
-  padding: 12px 24px;
-  border: none;
-  border-radius: 8px;
-  margin-top: 20px;
-  font-size: 1rem;
-  cursor: pointer;
-  transition: transform 0.3s, background 0.3s;
-}
 
 .button {
+  text-decoration: none;
   background: #0072ff;
   color: white;
   padding: 12px 24px;
@@ -142,23 +131,6 @@ nav button:hover {
   text-decoration: underline;
 }
 
-.button {
-  background: #0072ff;
-  color: white;
-  padding: 12px 24px;
-  border: none;
-  border-radius: 8px;
-  margin-top: 20px;
-  font-size: 1rem;
-  cursor: pointer;
-  transition: transform 0.3s, background 0.3s;
-}
-
-.button:hover {
-  transform: scale(1.05);
-  background: #005ecb;
-}
-
 .features {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
@@ -185,7 +157,6 @@ nav button:hover {
   color: #0072ff;
 }
 
-/* Products Page Styles */
 .grid {
   display: grid;
   gap: 16px;
@@ -276,7 +247,6 @@ footer {
   margin-top: 20px;
 }
 
-/* Contact Form Styles */
 form {
   background: #fff;
   max-width: 700px;
@@ -322,7 +292,6 @@ textarea {
   min-height: 120px;
 }
 
-/* Modal Styles */
 .modal {
   display: none;
   position: fixed;
@@ -400,7 +369,6 @@ textarea {
   text-align: center;
 }
 
-/* Animations */
 @keyframes fadeIn {
   from {
     opacity: 0;
@@ -434,7 +402,6 @@ textarea {
   }
 }
 
-/* Offers Page Specific Styles */
 .offers-section {
   padding: 60px 40px;
   display: flex;
@@ -483,8 +450,8 @@ textarea {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
   gap: 30px;
-  justify-content: center; /* Center the grid container */
-  justify-items: center; /* Center items inside each grid cell */
+  justify-content: center;
+  justify-items: center;
   padding: 20px;
   animation: fadeInUp 1s ease-in-out;
 }
@@ -497,7 +464,6 @@ textarea {
   margin-bottom: 10px;
 }
 
-/* About Page Specific Styles */
 .content {
   background: #ffffff;
   max-width: 900px;
@@ -508,7 +474,7 @@ textarea {
   animation: fadeInUp 1.5s ease-in-out;
   font-size: 1.05rem;
   line-height: 1.7;
-  margin: 40px auto; /* <-- This line centers it horizontally */
+  margin: 40px auto;
 }
 
 .content h2 {
@@ -525,7 +491,6 @@ textarea {
   margin-bottom: 8px;
 }
 
-/* Loading States */
 .loading {
   text-align: center;
   padding: 40px;
