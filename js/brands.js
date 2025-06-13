@@ -10,14 +10,26 @@ document.addEventListener("DOMContentLoaded", function () {
       }
 
       container.innerHTML = "";
-      brands.forEach((brand) => {
+      brands.forEach((brand, index) => {
         const brandCard = document.createElement("div");
         brandCard.className = "brand-card";
-        brandCard.title = brand.name;
+        brandCard.title = brand.name || `Brand ${index + 1}`;
         brandCard.innerHTML = `
-          <img src="${brand.image}" alt="${brand.name} Logo" class="brand-logo" />
-          <div class="brand-name">${brand.name}</div>
+          <img src="${brand.image}" alt="${
+          brand.name || `Brand ${index + 1}`
+        } Logo" class="brand-logo" />
+        ${brand.name ? `<div class="brand-name">${brand.name}</div>` : ""}
+
         `;
+
+        // Add click event for first brand (Daikin)
+        if (index === 0) {
+          brandCard.style.cursor = "pointer";
+          brandCard.addEventListener("click", function () {
+            window.location.href = "products.html";
+          });
+        }
+
         container.appendChild(brandCard);
       });
     })
