@@ -13,6 +13,29 @@ body {
   overflow-x: hidden;
 }
 
+.header-flex {
+  display: flex;
+  align-items: center;
+  gap: 15px;
+  padding: 20px;
+}
+
+.logo {
+  width: 200px; /* Adjust size as needed */
+  height: auto;
+}
+
+.header-text h1 {
+  margin: 0;
+  font-size: 2em;
+}
+
+.header-text p {
+  margin: 0;
+  font-size: 1em;
+  color: #555;
+}
+
 header {
   background: linear-gradient(90deg, #00c6ff, #0072ff);
   color: white;
