@@ -23,7 +23,7 @@ document.addEventListener("DOMContentLoaded", function () {
         `;
 
         // Add click event for first brand (Daikin)
-        if (index === 0) {
+        if (index === 0, 1) {
           brandCard.style.cursor = "pointer";
           brandCard.addEventListener("click", function () {
             window.location.href = "products.html";
