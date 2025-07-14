@@ -16,8 +16,9 @@ body {
 .header-flex {
   display: flex;
   align-items: center;
-  gap: 15px;
   padding: 20px;
+  background: linear-gradient(90deg, #ff7e00, #ffb347); 
+  color: #fff;
 }
 
 .logo {
